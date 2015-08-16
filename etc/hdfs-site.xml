@@ -18,7 +18,7 @@
    <name>dfs.namenode.name.dir</name>
    <value>file:/var/lib/hadoop-hdfs/cache/hdfs/dfs/name</value>
  </property>
- 
+
  <property>
    <name>dfs.client.use.legacy.blockreader.local</name>
    <value>false</value>
@@ -41,10 +41,10 @@
 <property>
   <name>dfs.datanode.hdfs-blocks-metadata.enabled</name>
   <value>true</value>
-</property> 
+</property>
  <property>
    <name>dfs.datanode.data.dir</name>
-   <value>file:/data/dn</value>
+   <value>file:/data/persistent/dn</value>
  </property>
 <!--
  <property>
