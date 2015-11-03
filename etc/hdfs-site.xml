@@ -9,6 +9,10 @@
     <value>/var/run/hdfs-sockets/dn</value>
 </property>
 
+<property>
+  <name>dfs.permissions.enabled</name>
+  <value>false</value>
+</property>
 
  <property>
    <name>dfs.replication</name>
