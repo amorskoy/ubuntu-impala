@@ -46,6 +46,7 @@ COPY bin/start-hdfs.sh $WORKDIR/bin/
 COPY bin/start-impala.sh $WORKDIR/bin/
 COPY bin/start-bash.sh $WORKDIR/bin/
 COPY bin/start-daemon.sh $WORKDIR/bin/
+RUN chmod +x $WORKDIR/bin/*
 COPY bin/hdp /usr/bin/hdp
 
 # HDFS PORTS :

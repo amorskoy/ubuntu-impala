@@ -1,5 +1,5 @@
 #!/bin/bash
-/start.sh
+$WORKDIR/bin/start.sh
 while true
 do
 	sleep 30
