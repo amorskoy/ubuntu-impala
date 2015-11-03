@@ -66,4 +66,4 @@ ADD bin/hdp /usr/bin/hdp
 
 EXPOSE 9000 50010 50020 50070 50075 21000 21050 25000 25010 25020
 
-CMD /start-daemon.sh
+CMD /data/bin/start-daemon.sh
