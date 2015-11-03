@@ -25,7 +25,9 @@ RUN mkdir /var/run/hdfs-sockets/
 RUN chown hdfs.hadoop /var/run/hdfs-sockets/
 
 RUN mkdir -p $WORKDIR/dn/
-RUN chown hdfs.hadoop /data/persistent/dn
+RUN chown hdfs.hadoop $WORKDIR/persistent/dn
+RUN mkdir $WORKDIR/bin
+ENV PATH=$PATH:$WORKDIR/bin
 VOLUME $WORKDIR/persistent/dn
 
 
@@ -38,11 +40,11 @@ COPY etc/core-site.xml /etc/impala/conf/
 COPY etc/hdfs-site.xml /etc/impala/conf/
 
 # Various helper scripts
-COPY bin/start.sh $WORKDIR
-COPY bin/start-hdfs.sh $WORKDIR
-COPY bin/start-impala.sh $WORKDIR
-COPY bin/start-bash.sh $WORKDIR
-COPY bin/start-daemon.sh $WORKDIR
+COPY bin/start.sh $WORKDIR/bin
+COPY bin/start-hdfs.sh $WORKDIR/bin
+COPY bin/start-impala.sh $WORKDIR/bin
+COPY bin/start-bash.sh $WORKDIR/bin
+COPY bin/start-daemon.sh $WORKDIR/bin
 COPY bin/hdp /usr/bin/hdp
 
 # HDFS PORTS :
