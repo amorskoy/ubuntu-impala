@@ -2,8 +2,8 @@ FROM ubuntu:15.10
 MAINTAINER michael@faille.io
 
 
-ENV http_proxy http://172.17.42.1:3128
-ENV https_proxy $http_proxy
+#ENV http_proxy http://172.17.42.1:3128
+#ENV https_proxy $http_proxy
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
