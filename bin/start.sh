@@ -1,4 +1,4 @@
 #!/bin/bash
-/start-hdfs.sh
-/start-impala.sh
+$WORKDIR/bin/start-hdfs.sh
+$WORKDIR/bin/start-impala.sh
 echo "Impala is Started, Enjoy!"
