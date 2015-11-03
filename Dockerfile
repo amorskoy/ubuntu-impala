@@ -10,6 +10,7 @@ RUN apt-get update -y && \
     apt-get install wget -y && \
     wget http://archive.cloudera.com/cdh5/one-click-install/trusty/amd64/cdh5-repository_1.0_all.deb && \
     dpkg -i /cdh5-repository_1.0_all.deb && \
+    apt-get update -y && \
     apt-get install -y  openjdk-8-jre-headless hadoop-hdfs-namenode hadoop-hdfs-datanode impala impala-server impala-shell impala-catalog impala-state-store -y && \
     rm -rf /var/lib/apt/lists/*
 
