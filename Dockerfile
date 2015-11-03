@@ -41,7 +41,6 @@ COPY etc/core-site.xml /etc/impala/conf/
 COPY etc/hdfs-site.xml /etc/impala/conf/
 
 # Various helper scripts
-RUN  ls $WORKDIR/bin/
 COPY bin/start.sh $WORKDIR/bin/
 COPY bin/start-hdfs.sh $WORKDIR/bin/
 COPY bin/start-impala.sh $WORKDIR/bin/
