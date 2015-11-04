@@ -39,6 +39,7 @@ COPY etc/core-site.xml /etc/hadoop/conf/
 COPY etc/hdfs-site.xml /etc/hadoop/conf/
 COPY etc/core-site.xml /etc/impala/conf/
 COPY etc/hdfs-site.xml /etc/impala/conf/
+COPY etc/core-site.xml /etc/hive/conf/
 COPY etc/hive-site.xml /etc/hive/conf/
 
 # Various helper scripts
