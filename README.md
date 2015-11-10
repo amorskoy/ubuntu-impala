@@ -1,4 +1,4 @@
-Centos Impala
+Ubuntu Impala
 
 Software install on this image :
 
