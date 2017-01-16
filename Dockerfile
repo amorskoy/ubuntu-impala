@@ -7,7 +7,7 @@ ENV WORKDIR /data
 #ENV https_proxy $http_proxy
 
 RUN apt-get update -y && \
-    apt-get install wget -y && \
+    apt-get install wget apt-transport-https -y && \
     wget http://archive.cloudera.com/cdh5/one-click-install/trusty/amd64/cdh5-repository_1.0_all.deb && \
     dpkg -i /cdh5-repository_1.0_all.deb && \
     apt-get update -y && \
