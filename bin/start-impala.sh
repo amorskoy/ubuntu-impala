@@ -13,6 +13,8 @@ if [[ "$?" != "0" ]]; then
 	su hdfs sh -c "hadoop fs -chown impala:impala /user/hive"
 fi
 
+export JAVA_TOOL_OPTIONS="-Xss2m"
+
 /etc/init.d/impala-catalog start
 /etc/init.d/impala-state-store start
 /etc/init.d/impala-server start
