@@ -30,7 +30,7 @@
 
 <property>
    <name>dfs.datanode.data.dir.perm</name>
-   <value>750</value>
+   <value>777</value>
 </property>
 
 <property>
